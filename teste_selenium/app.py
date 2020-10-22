@@ -3,11 +3,8 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-from flask import Flask
 
 a, n, lis = 'ABCDEFG', 0, []
-
-app = Flask(__name__)
 	
 google = webdriver.Chrome('C:/Users/User/Documents/Coisas/software/chromedriver.exe')
 google.get('http://127.0.0.1:5000/')
@@ -95,7 +92,3 @@ while len(lis) < 60:
 			google.switch_to.alert.accept()
 			lis.remove(usuario[0])
 			time.sleep(2)
-
-if __name__ == "__main__":
-	app.run()
-		
