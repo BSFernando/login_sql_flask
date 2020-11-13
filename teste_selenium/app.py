@@ -6,7 +6,7 @@ import time
 
 a, n, lis = 'ABCDEFG', 0, []
 	
-google = webdriver.Chrome('C:/Users/User/Documents/Coisas/software/chromedriver.exe')
+google = webdriver.Chrome('.../chromedriver.exe')
 google.get('http://127.0.0.1:5000/')
 
 while len(lis) < 60:
